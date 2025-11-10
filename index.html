@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>InfoSAM: Fine-Tuning the Segment Anything Model from An Information-Theoretic Perspective</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">InfoSAM: Fine-Tuning the Segment Anything Model from An Information-Theoretic Perspective</h1>
+              <div class="is-size-5 publication-authors">
+                <!-- Paper authors -->
+                <span class="author-block">
+                  <a href="https://muyaoyuan.github.io/" target="_blank">Muyao Yuan</a><sup>*</sup>,</span>
+                <span class="author-block">
+                  <a href="https://scholar.google.com/citations?user=IMjuhnQAAAAJ" target="_blank">Yuanhong Zhang</a><sup>*</sup>,</span>
+                <span class="author-block">
+                  <a href="https://gr.xjtu.edu.cn/en/web/zhangwzh123" target="_blank">Weizhan Zhang</a>,</span>
+                <span class="author-block">
+                  <a href="https://openreview.net/profile?id=~LAN_MA5" target="_blank">Lan Ma</a>,</span>
+                <span class="author-block">
+                  <a href="https://openreview.net/profile?id=~Yuan_Gao55" target="_blank">Yuan Gao</a>,</span>
+                <span class="author-block">
+                  <a href="https://openreview.net/profile?id=~Jiangyong_Ying2" target="_blank">Jiangyong Ying</a>,</span>
+                <span class="author-block">
+                  <a href="https://openreview.net/profile?id=~Yudeng_Xin1" target="_blank">Yudeng Xin</a>
+                </span>
+              </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Xi'an Jiaotong University<br> AAAI 2026 </span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://muyaoyuan.github.io/InfoCLIP_Page" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Arxiv (Coming Soon)</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <!-- <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span> -->
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/MuyaoYuan/InfoSAM" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code (Coming Soon)</span>
+                  </a>
+                </span>
+
+                <!-- <span class="link-block">
+                  <a href="https://huggingface.co/MuyaoYuan/InfoSAM/tree/main" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-smile-beam"></i>
+                    </span>
+                    <span>Model (Coming Soon)</span>
+                  </a>
+                </span> -->
+
+                <!-- ArXiv abstract Link -->
+                <!-- <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser image -->
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body has-text-centered">
+      <img src="static/images/fig2-overview-web.svg" alt="Teaser image" style="max-width: 100%; height: auto;">
+      <h2 class="subtitle">
+        InfoSAM improves SAM's performance on specialized tasks by using an information-theoretic approach to distill and preserve domain-invariant knowledge during fine-tuning.
+      </h2>
+    </div>
+  </div>
+</section> -->
+<!-- End teaser image -->
+
+<!-- Teaser video-->
+<!-- <section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="static/videos/InfoSAM-Video.mp4"
+        type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section> -->
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<!-- <section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            The Segment Anything Model (SAM), a vision foundation model, exhibits impressive zero-shot capabilities in general tasks but struggles in specialized domains. Parameter-efficient fine-tuning (PEFT) is a promising approach to unleash the potential of SAM in novel scenarios. However, existing PEFT methods for SAM neglect the domain-invariant relations encoded in the pre-trained model. To bridge this gap, we propose InfoSAM, an information-theoretic approach that enhances SAM fine-tuning by distilling and preserving its pre-trained segmentation knowledge. Specifically, we formulate the knowledge transfer process as two novel mutual information-based objectives: (i) to compress the domain-invariant relation extracted from pre-trained SAM, excluding pseudo-invariant information as possible, and (ii) to maximize mutual information between the relational knowledge learned by the teacher (pre-trained SAM) and the student (fine-tuned model). The proposed InfoSAM establishes a robust distillation framework for PEFT of SAM. Extensive experiments across diverse benchmarks validate InfoSAM's effectiveness in improving SAM family's performance on real-world tasks, demonstrating its adaptability and superiority in handling specialized scenarios.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End paper abstract -->
+
+
+<!-- Image carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+      <div class="item">
+        <img src="static/images/camo-web.svg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Visualization results on camouflaged object segmentation
+        </h2>
+      </div>
+      <div class="item">
+        <img src="static/images/leaf-web.svg" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Visualization results on leaf disease segmentation.
+       </h2>
+     </div>
+     <div class="item">
+      <img src="static/images/road-web.svg" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Visualization results on remote sensing road segmentation.
+      </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section> -->
+<!-- End image carousel -->
+
+
+
+
+<!-- Youtube video -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container"> -->
+      <!-- Paper video. -->
+      <!-- <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          
+          <div class="publication-video"> -->
+            <!-- Youtube embed code here -->
+            <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End youtube video -->
+
+
+<!-- Video carousel -->
+<!-- <section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">Another Carousel</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-video1">
+          <video poster="" id="video1" autoplay controls muted loop height="100%"> -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/carousel1.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video2">
+          <video poster="" id="video2" autoplay controls muted loop height="100%"> -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/carousel2.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-video3">
+          <video poster="" id="video3" autoplay controls muted loop height="100%">\ -->
+            <!-- Your video file here -->
+            <!-- <source src="static/videos/carousel3.mp4"
+            type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- End video carousel -->
+
+<!-- Paper poster -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+      <iframe  src="static/pdfs/ICML2025-Poster-InfoSAM.pdf" width="100%" height="700">
+      </iframe>
+    </div>
+  </div>
+</section> -->
+<!--End paper poster -->
+
+<!-- Paper slides -->
+<!-- <section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Slides</h2>
+      <iframe  src="static/pdfs/ICML2025-InfoSAM-Sildes.pdf" width="100%" height="500">
+      </iframe>
+    </div>
+  </div>
+</section> -->
+<!--End paper slides -->
+
+
+<!--BibTex citation -->
+<!-- <section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+@article{zhang2025infosam,
+  title={InfoSAM: Fine-Tuning the Segment Anything Model from An Information-Theoretic Perspective},
+  author={Zhang, Yuanhong and Yuan, Muyao and Zhang, Weizhan and Gong, Tieliang and Wen, Wen and Ying, Jiangyong and Shi, Weijie},
+  journal={arXiv preprint arXiv:2505.21920},
+  year={2025}
+}
+    </code></pre>
+  </div>
+</section> -->
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
